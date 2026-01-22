@@ -17,7 +17,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="bg-[#4F46E5] p-1.5 rounded-lg">
+          <div className="bg-[#663399] p-1.5 rounded-lg">
             <svg
               className="size-6 text-white"
               fill="none"
@@ -57,11 +57,11 @@ const ProfileCreationCard = ({
 }) => {
   return (
     <button
-      className="group relative bg-white border-2 border-transparent hover:border-[#4F46E5] p-8 md:p-10 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 text-left flex flex-col items-center md:items-start w-full"
+      className="group relative bg-white border-2 border-transparent hover:border-[#663399] p-8 md:p-10 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 text-left flex flex-col items-center md:items-start w-full"
       onClick={onClick}
     >
       <div
-        className={`mb-6 w-20 h-20 ${highlightColor} rounded-2xl flex items-center justify-center group-hover:bg-[#4F46E5] group-hover:text-white transition-colors duration-300`}
+        className={`mb-6 w-20 h-20 ${highlightColor} rounded-2xl flex items-center justify-center group-hover:bg-[#663399] group-hover:text-white transition-colors duration-300`}
       >
         <Icon className="size-10" />
       </div>
@@ -69,7 +69,7 @@ const ProfileCreationCard = ({
       <p className="text-gray-500 text-base leading-relaxed mb-6">
         {description}
       </p>
-      <div className="mt-auto flex items-center text-[#4F46E5] font-bold group-hover:translate-x-1 transition-transform">
+      <div className="mt-auto flex items-center text-[#663399] font-bold group-hover:translate-x-1 transition-transform">
         {buttonText} <ArrowRight className="ml-2 size-5" />
       </div>
 
@@ -106,8 +106,8 @@ const ProfileCreationMethod = () => {
       <main className="flex-1 flex flex-col items-center justify-center px-6 py-12">
         <div className="max-w-[900px] w-full text-center">
           <div className="mb-12 inline-flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-full shadow-sm">
-            <div className="w-2 h-2 rounded-full bg-[#4F46E5]"></div>
-            <span className="text-xs font-bold uppercase tracking-widest text-[#4F46E5]">
+            <div className="w-2 h-2 rounded-full bg-[#663399]"></div>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#663399]">
               Step 2: Profile Setup
             </span>
           </div>
@@ -126,7 +126,7 @@ const ProfileCreationMethod = () => {
               title="Upload Your Resume"
               description="We'll automatically parse your details to save you time. Supports PDF, DOCX."
               buttonText="Get Started"
-              highlightColor="bg-[#EEF2FF] text-[#4F46E5]"
+              highlightColor="bg-[#EEF2FF] text-[#663399]"
               showBolt={true}
               onClick={handleResumeUpload}
             />
@@ -151,7 +151,7 @@ const ProfileCreationMethod = () => {
             </button>
 
             <div className="pt-8 border-t border-gray-200 w-full max-w-xs">
-              <p className="text-xs text-[#4F46E5] flex items-center justify-center gap-2">
+              <p className="text-xs text-[#663399] flex items-center justify-center gap-2">
                 <Shield className="size-4" />
                 Your data is encrypted and secure
               </p>
