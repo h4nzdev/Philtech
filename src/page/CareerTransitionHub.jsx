@@ -27,10 +27,10 @@ const SkillsRadar = () => {
     <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
       <div className="flex items-center justify-between mb-6">
         <h3 className="font-bold flex items-center gap-2">
-          <Radar className="text-[#4F46E5] text-xl" />
+          <Radar className="text-[#663399] text-xl" />
           Skills Deep Dive
         </h3>
-        <button className="text-[10px] font-bold text-[#4F46E5] uppercase hover:underline">
+        <button className="text-[10px] font-bold text-[#663399] uppercase hover:underline">
           Full Audit
         </button>
       </div>
@@ -42,7 +42,7 @@ const SkillsRadar = () => {
         <div className="absolute inset-4 [clip-path:polygon(50%_0%,100%_38%,82%_100%,18%_100%,0%_38%)] bg-gray-200 opacity-50 border border-gray-300"></div>
 
         {/* Inner radar shape */}
-        <div className="absolute inset-8 [clip-path:polygon(50%_0%,100%_38%,82%_100%,18%_100%,0%_38%)] bg-[#4F46E5]/20 border-2 border-[#4F46E5]"></div>
+        <div className="absolute inset-8 [clip-path:polygon(50%_0%,100%_38%,82%_100%,18%_100%,0%_38%)] bg-[#663399]/20 border-2 border-[#663399]"></div>
 
         {/* Labels */}
         <div className="absolute inset-0 flex items-center justify-center">
@@ -70,7 +70,7 @@ const SkillsRadar = () => {
         </div>
         <div className="flex items-center justify-between p-2 rounded-lg bg-gray-50">
           <span className="text-xs font-medium">Interest Match</span>
-          <span className="text-xs font-bold text-[#4F46E5]">92%</span>
+          <span className="text-xs font-bold text-[#663399]">92%</span>
         </div>
         <p className="text-[11px] text-gray-500 leading-relaxed mt-4 italic">
           "Your analytical background provides a strong 2nd-degree foundation
@@ -111,14 +111,14 @@ const JobMatchCard = ({ title, company, location, matchScore, icon: Icon }) => {
 // Learning Card Component
 const LearningCard = () => {
   return (
-    <div className="flex flex-col sm:flex-row gap-4 p-4 bg-[#EEF2FF] border border-[#4F46E5]/10 rounded-2xl">
-      <div className="w-full sm:w-32 h-24 bg-[#4F46E5]/20 rounded-xl flex items-center justify-center relative overflow-hidden group">
-        <PlayCircle className="text-[#4F46E5] size-10" />
-        <div className="absolute inset-0 bg-[#4F46E5]/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    <div className="flex flex-col sm:flex-row gap-4 p-4 bg-[#EEF2FF] border border-[#663399]/10 rounded-2xl">
+      <div className="w-full sm:w-32 h-24 bg-[#663399]/20 rounded-xl flex items-center justify-center relative overflow-hidden group">
+        <PlayCircle className="text-[#663399] size-10" />
+        <div className="absolute inset-0 bg-[#663399]/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
       </div>
       <div className="flex-1 space-y-2">
         <div className="flex items-center gap-2">
-          <span className="px-2 py-0.5 bg-[#4F46E5] text-white text-[9px] font-bold rounded uppercase">
+          <span className="px-2 py-0.5 bg-[#663399] text-white text-[9px] font-bold rounded uppercase">
             Top Rated
           </span>
           <span className="text-[10px] text-gray-500 font-medium">
@@ -131,7 +131,7 @@ const LearningCard = () => {
         <p className="text-xs text-gray-500">
           Provider: Coursera Specialist Track
         </p>
-        <button className="text-xs font-bold text-[#4F46E5] flex items-center gap-1 hover:gap-2 transition-all">
+        <button className="text-xs font-bold text-[#663399] flex items-center gap-1 hover:gap-2 transition-all">
           Start Learning <ChevronRight className="size-3" />
         </button>
       </div>
@@ -235,7 +235,7 @@ const CareerTransitionHub = () => {
           {/* Learning & Networking */}
           <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold mb-6 flex items-center gap-2">
-              <School className="text-[#4F46E5] text-xl" />
+              <School className="text-[#663399] text-xl" />
               Learning & Networking
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -245,10 +245,10 @@ const CareerTransitionHub = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="bg-gray-900 text-white rounded-2xl p-8 border border-[#4F46E5]/20 flex flex-col md:flex-row items-center justify-between gap-6 overflow-hidden relative">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#4F46E5]/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+          <div className="bg-gray-900 text-white rounded-2xl p-8 border border-[#663399]/20 flex flex-col md:flex-row items-center justify-between gap-6 overflow-hidden relative">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#663399]/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
             <div className="relative z-10 flex items-center gap-5">
-              <div className="w-14 h-14 bg-[#4F46E5] rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(79,70,229,0.3)]">
+              <div className="w-14 h-14 bg-[#663399] rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(79,70,229,0.3)]">
                 <Rocket className="text-white size-6" />
               </div>
               <div>
@@ -262,7 +262,7 @@ const CareerTransitionHub = () => {
               </div>
             </div>
             <div className="relative z-10 flex gap-3 w-full md:w-auto">
-              <button className="flex-1 md:flex-none bg-[#4F46E5] text-white px-8 py-4 rounded-xl font-extrabold text-sm hover:bg-[#6366F1] transition-all shadow-lg shadow-[#4F46E5]/20">
+              <button className="flex-1 md:flex-none bg-[#663399] text-white px-8 py-4 rounded-xl font-extrabold text-sm hover:bg-[#6366F1] transition-all shadow-lg shadow-[#663399]/20">
                 Apply for Matches
               </button>
               <button className="flex-1 md:flex-none bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-extrabold text-sm hover:bg-white/20 transition-all">

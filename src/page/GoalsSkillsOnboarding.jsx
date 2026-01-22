@@ -17,7 +17,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="bg-[#4F46E5] p-1.5 rounded-lg">
+          <div className="bg-[#663399] p-1.5 rounded-lg">
             <svg
               className="size-6 text-white"
               fill="none"
@@ -37,25 +37,25 @@ const Header = () => {
         <div className="flex items-center gap-8">
           <nav className="hidden md:flex items-center gap-8">
             <a
-              className="text-sm font-medium text-gray-600 hover:text-[#4F46E5] transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-[#663399] transition-colors"
               href="#"
             >
               How it Works
             </a>
             <a
-              className="text-sm font-medium text-gray-600 hover:text-[#4F46E5] transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-[#663399] transition-colors"
               href="#"
             >
               Resources
             </a>
             <a
-              className="text-sm font-medium text-gray-600 hover:text-[#4F46E5] transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-[#663399] transition-colors"
               href="#"
             >
               Support
             </a>
           </nav>
-          <button className="bg-[#EEF2FF] hover:bg-[#E0E7FF] text-[#4F46E5] px-5 py-2 rounded-lg text-sm font-bold transition-all">
+          <button className="bg-[#EEF2FF] hover:bg-[#E0E7FF] text-[#663399] px-5 py-2 rounded-lg text-sm font-bold transition-all">
             Exit Signup
           </button>
         </div>
@@ -68,19 +68,19 @@ const Header = () => {
 const GoalCard = ({ icon: Icon, title, description, isSelected, onClick }) => {
   return (
     <div
-      className={`relative group cursor-pointer border-2 ${isSelected ? "border-[#4F46E5] bg-[#EEF2FF]" : "border-gray-200 hover:border-[#4F46E5]/50"} p-6 rounded-xl transition-all`}
+      className={`relative group cursor-pointer border-2 ${isSelected ? "border-[#663399] bg-[#EEF2FF]" : "border-gray-200 hover:border-[#663399]/50"} p-6 rounded-xl transition-all`}
       onClick={onClick}
     >
       {isSelected && (
-        <div className="absolute top-3 right-3 text-[#4F46E5]">
+        <div className="absolute top-3 right-3 text-[#663399]">
           <CheckCircle className="size-5" />
         </div>
       )}
       <div
-        className={`w-12 h-12 ${isSelected ? "bg-[#4F46E5]/20" : "bg-gray-100 group-hover:bg-[#4F46E5]/10"} rounded-lg flex items-center justify-center mb-4 transition-colors`}
+        className={`w-12 h-12 ${isSelected ? "bg-[#663399]/20" : "bg-gray-100 group-hover:bg-[#663399]/10"} rounded-lg flex items-center justify-center mb-4 transition-colors`}
       >
         <Icon
-          className={`size-6 ${isSelected ? "text-[#4F46E5]" : "text-gray-500 group-hover:text-[#4F46E5]"}`}
+          className={`size-6 ${isSelected ? "text-[#663399]" : "text-gray-500 group-hover:text-[#663399]"}`}
         />
       </div>
       <p className="font-bold text-lg mb-1 text-gray-900">{title}</p>
@@ -92,7 +92,7 @@ const GoalCard = ({ icon: Icon, title, description, isSelected, onClick }) => {
 // Skill Tag Component
 const SkillTag = ({ skill, onRemove }) => {
   return (
-    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#EEF2FF] text-[#4F46E5] text-sm font-semibold rounded-full">
+    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#EEF2FF] text-[#663399] text-sm font-semibold rounded-full">
       {skill}
       <X className="size-3 cursor-pointer" onClick={() => onRemove(skill)} />
     </span>
@@ -103,7 +103,7 @@ const SkillTag = ({ skill, onRemove }) => {
 const SuggestedSkill = ({ skill, onClick }) => {
   return (
     <button
-      className="px-3 py-1.5 border border-gray-200 hover:bg-[#EEF2FF] rounded-full text-xs font-medium text-gray-600 hover:text-[#4F46E5] transition-colors"
+      className="px-3 py-1.5 border border-gray-200 hover:bg-[#EEF2FF] rounded-full text-xs font-medium text-gray-600 hover:text-[#663399] transition-colors"
       onClick={() => onClick(skill)}
     >
       + {skill}
@@ -115,7 +115,7 @@ const SuggestedSkill = ({ skill, onClick }) => {
 const WorkEnvButton = ({ label, isSelected, onClick }) => {
   return (
     <button
-      className={`flex-1 py-3 px-4 rounded-lg border-2 ${isSelected ? "border-[#4F46E5] bg-[#EEF2FF] text-[#4F46E5] font-bold" : "border-gray-200 hover:bg-gray-50 text-gray-600 font-medium"} text-sm transition-all`}
+      className={`flex-1 py-3 px-4 rounded-lg border-2 ${isSelected ? "border-[#663399] bg-[#EEF2FF] text-[#663399] font-bold" : "border-gray-200 hover:bg-gray-50 text-gray-600 font-medium"} text-sm transition-all`}
       onClick={onClick}
     >
       {label}
@@ -190,7 +190,7 @@ const GoalsSkillsOnboarding = () => {
         <div className="mb-12">
           <div className="flex justify-between items-end mb-3">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#4F46E5]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#663399]">
                 Onboarding
               </span>
               <h3 className="text-lg font-semibold text-gray-900">
@@ -201,11 +201,11 @@ const GoalsSkillsOnboarding = () => {
           </div>
           <div className="h-3 w-full bg-[#EEF2FF] rounded-full overflow-hidden">
             <div
-              className="h-full bg-[#4F46E5] rounded-full transition-all duration-1000"
+              className="h-full bg-[#663399] rounded-full transition-all duration-1000"
               style={{ width: "85%" }}
             ></div>
           </div>
-          <p className="mt-2 text-sm text-[#4F46E5] flex items-center gap-1">
+          <p className="mt-2 text-sm text-[#663399] flex items-center gap-1">
             <Sparkles className="size-4" />
             You're almost there! Just a few more details.
           </p>
@@ -218,7 +218,7 @@ const GoalsSkillsOnboarding = () => {
               <h2 className="text-2xl font-bold mb-1 text-gray-900">
                 Section 3: Primary Goals
               </h2>
-              <p className="text-[#4F46E5]">
+              <p className="text-[#663399]">
                 What is your main objective on this platform?
               </p>
             </div>
@@ -253,7 +253,7 @@ const GoalsSkillsOnboarding = () => {
               <h2 className="text-2xl font-bold mb-1 text-gray-900">
                 Section 4: Skills & Interests
               </h2>
-              <p className="text-[#4F46E5]">
+              <p className="text-[#663399]">
                 Add keywords that highlight your professional expertise.
               </p>
             </div>
@@ -298,7 +298,7 @@ const GoalsSkillsOnboarding = () => {
               <h2 className="text-2xl font-bold mb-1 text-gray-900">
                 Section 5: Preferences
               </h2>
-              <p className="text-[#4F46E5]">
+              <p className="text-[#663399]">
                 Tell us where and how you prefer to work.
               </p>
             </div>
@@ -332,7 +332,7 @@ const GoalsSkillsOnboarding = () => {
                 <div className="relative">
                   <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 size-5" />
                   <input
-                    className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-[#4F46E5] focus:border-[#4F46E5] transition-all text-gray-900"
+                    className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-[#663399] focus:border-[#663399] transition-all text-gray-900"
                     placeholder="City or Country"
                     type="text"
                     value={preferredLocation}
@@ -349,7 +349,7 @@ const GoalsSkillsOnboarding = () => {
               <label className="flex items-start gap-3 cursor-pointer group">
                 <div className="mt-1">
                   <input
-                    className="rounded border-gray-300 text-[#4F46E5] focus:ring-[#4F46E5] h-5 w-5"
+                    className="rounded border-gray-300 text-[#663399] focus:ring-[#663399] h-5 w-5"
                     type="checkbox"
                     checked={agreedToTerms}
                     onChange={(e) => setAgreedToTerms(e.target.checked)}
@@ -358,14 +358,14 @@ const GoalsSkillsOnboarding = () => {
                 <span className="text-sm text-gray-600 leading-relaxed">
                   I agree to the{" "}
                   <a
-                    className="text-[#4F46E5] font-bold hover:underline"
+                    className="text-[#663399] font-bold hover:underline"
                     href="#"
                   >
                     Terms of Service
                   </a>{" "}
                   and{" "}
                   <a
-                    className="text-[#4F46E5] font-bold hover:underline"
+                    className="text-[#663399] font-bold hover:underline"
                     href="#"
                   >
                     Privacy Policy
@@ -377,7 +377,7 @@ const GoalsSkillsOnboarding = () => {
               <label className="flex items-start gap-3 cursor-pointer group">
                 <div className="mt-1">
                   <input
-                    className="rounded border-gray-300 text-[#4F46E5] focus:ring-[#4F46E5] h-5 w-5"
+                    className="rounded border-gray-300 text-[#663399] focus:ring-[#663399] h-5 w-5"
                     type="checkbox"
                     checked={subscribeNewsletter}
                     onChange={(e) => setSubscribeNewsletter(e.target.checked)}
@@ -391,7 +391,7 @@ const GoalsSkillsOnboarding = () => {
             </div>
             <div className="flex flex-col gap-4">
               <button
-                className="w-full bg-[#4F46E5] hover:bg-[#6366F1] text-white py-4 rounded-xl text-lg font-extrabold tracking-tight transition-all shadow-[0_4px_14px_0_rgba(79,70,229,0.39)] active:scale-[0.98]"
+                className="w-full bg-[#663399] hover:bg-[#6366F1] text-white py-4 rounded-xl text-lg font-extrabold tracking-tight transition-all shadow-[0_4px_14px_0_rgba(79,70,229,0.39)] active:scale-[0.98]"
                 onClick={handleCreateAccount}
               >
                 Create Account

@@ -20,7 +20,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="bg-[#4F46E5] p-1.5 rounded-lg">
+          <div className="bg-[#663399] p-1.5 rounded-lg">
             <svg
               className="size-6 text-white"
               fill="none"
@@ -40,25 +40,25 @@ const Header = () => {
         <div className="flex items-center gap-8">
           <nav className="hidden md:flex items-center gap-8">
             <a
-              className="text-sm font-medium text-gray-600 hover:text-[#4F46E5] transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-[#663399] transition-colors"
               href="#"
             >
               How it Works
             </a>
             <a
-              className="text-sm font-medium text-gray-600 hover:text-[#4F46E5] transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-[#663399] transition-colors"
               href="#"
             >
               Resources
             </a>
             <a
-              className="text-sm font-medium text-gray-600 hover:text-[#4F46E5] transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-[#663399] transition-colors"
               href="#"
             >
               Support
             </a>
           </nav>
-          <button className="bg-[#EEF2FF] hover:bg-[#E0E7FF] text-[#4F46E5] px-5 py-2 rounded-lg text-sm font-bold transition-all">
+          <button className="bg-[#EEF2FF] hover:bg-[#E0E7FF] text-[#663399] px-5 py-2 rounded-lg text-sm font-bold transition-all">
             Exit
           </button>
         </div>
@@ -149,7 +149,7 @@ const UploadResume = () => {
         <div className="mb-10 max-w-[800px]">
           <div className="flex justify-between items-end mb-3">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#4F46E5]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#663399]">
                 Onboarding
               </span>
               <h3 className="text-lg font-semibold text-gray-900">
@@ -160,7 +160,7 @@ const UploadResume = () => {
           </div>
           <div className="h-2.5 w-full bg-[#EEF2FF] rounded-full overflow-hidden">
             <div
-              className="h-full bg-[#4F46E5] rounded-full transition-all duration-1000"
+              className="h-full bg-[#663399] rounded-full transition-all duration-1000"
               style={{ width: "40%" }}
             ></div>
           </div>
@@ -173,7 +173,7 @@ const UploadResume = () => {
               <h1 className="text-4xl font-extrabold tracking-tight mb-2 text-gray-900">
                 Upload Your Resume
               </h1>
-              <p className="text-[#4F46E5] text-lg">
+              <p className="text-[#663399] text-lg">
                 We'll analyze your experience to personalize your roadmap.
               </p>
             </div>
@@ -181,7 +181,7 @@ const UploadResume = () => {
             {/* Upload Area */}
             <div
               className={`bg-white border-2 border-dashed ${
-                isDragging ? "border-[#4F46E5] bg-[#EEF2FF]" : "border-gray-300"
+                isDragging ? "border-[#663399] bg-[#EEF2FF]" : "border-gray-300"
               } rounded-2xl p-12 flex flex-col items-center justify-center min-h-[400px] transition-all hover:bg-[#EEF2FF]/50 group cursor-pointer`}
               onDragEnter={handleDragEnter}
               onDragOver={handleDragOver}
@@ -190,7 +190,7 @@ const UploadResume = () => {
               onClick={() => document.getElementById("fileInput").click()}
             >
               <div className="w-20 h-20 bg-[#EEF2FF] rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <CloudUpload className="text-[#4F46E5] size-10" />
+                <CloudUpload className="text-[#663399] size-10" />
               </div>
               <h3 className="text-xl font-bold mb-2 text-gray-900">
                 Drag and drop your file here
@@ -203,7 +203,7 @@ const UploadResume = () => {
                 accept=".pdf,.doc,.docx"
                 onChange={handleFileInput}
               />
-              <button className="bg-[#4F46E5] hover:bg-[#6366F1] text-white px-8 py-3 rounded-xl font-bold transition-all shadow-lg">
+              <button className="bg-[#663399] hover:bg-[#6366F1] text-white px-8 py-3 rounded-xl font-bold transition-all shadow-lg">
                 Or browse files
               </button>
               <div className="mt-8 flex items-center gap-4">
@@ -231,7 +231,7 @@ const UploadResume = () => {
                 Back
               </button>
               <button
-                className="bg-[#4F46E5] text-white px-8 py-4 rounded-xl text-lg font-extrabold tracking-tight hover:bg-[#6366F1] transition-all active:scale-[0.98] flex items-center gap-3"
+                className="bg-[#663399] text-white px-8 py-4 rounded-xl text-lg font-extrabold tracking-tight hover:bg-[#6366F1] transition-all active:scale-[0.98] flex items-center gap-3"
                 onClick={handleScanAndContinue}
               >
                 <Sparkles className="size-5" />
@@ -260,7 +260,7 @@ const UploadResume = () => {
                   icon={Key}
                   title="Use keywords"
                   description="Include industry-specific terms so our AI can accurately match you to roles."
-                  colorClass="bg-[#EEF2FF] text-[#4F46E5]"
+                  colorClass="bg-[#EEF2FF] text-[#663399]"
                 />
 
                 <TipCard
@@ -271,8 +271,8 @@ const UploadResume = () => {
                 />
 
                 <div className="mt-6 pt-6 border-t border-gray-200">
-                  <div className="bg-[#EEF2FF] rounded-xl p-4 border border-[#4F46E5]/20">
-                    <p className="text-xs font-medium text-[#4F46E5] mb-2 flex items-center gap-1">
+                  <div className="bg-[#EEF2FF] rounded-xl p-4 border border-[#663399]/20">
+                    <p className="text-xs font-medium text-[#663399] mb-2 flex items-center gap-1">
                       <Shield className="size-3" />
                       AI-Ready
                     </p>
@@ -283,7 +283,7 @@ const UploadResume = () => {
                       You can manually fill your details in the next step.
                     </p>
                     <button
-                      className="text-xs font-bold text-[#4F46E5] hover:underline flex items-center gap-1"
+                      className="text-xs font-bold text-[#663399] hover:underline flex items-center gap-1"
                       onClick={handleSkipToManual}
                     >
                       Skip and fill manually <ChevronRight className="size-3" />

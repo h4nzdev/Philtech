@@ -26,7 +26,7 @@ const Header = () => {
       <div className="max-w-[1400px] mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-3">
-            <div className="bg-[#4F46E5] p-1.5 rounded-lg">
+            <div className="bg-[#663399] p-1.5 rounded-lg">
               <svg
                 className="size-6 text-white"
                 fill="none"
@@ -45,25 +45,25 @@ const Header = () => {
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <a
-              className="text-sm font-medium text-gray-600 hover:text-[#4F46E5] transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-[#663399] transition-colors"
               href="#"
             >
               Dashboard
             </a>
             <a
-              className="text-sm font-bold text-[#4F46E5] border-b-2 border-[#4F46E5] py-5 px-1"
+              className="text-sm font-bold text-[#663399] border-b-2 border-[#663399] py-5 px-1"
               href="#"
             >
               Jobs
             </a>
             <a
-              className="text-sm font-medium text-gray-600 hover:text-[#4F46E5] transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-[#663399] transition-colors"
               href="#"
             >
               Roadmap
             </a>
             <a
-              className="text-sm font-medium text-gray-600 hover:text-[#4F46E5] transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-[#663399] transition-colors"
               href="#"
             >
               Resources
@@ -74,8 +74,8 @@ const Header = () => {
           <button className="p-2 text-gray-500 hover:bg-gray-100 rounded-full transition-colors">
             <Bell className="size-5" />
           </button>
-          <div className="w-8 h-8 rounded-full bg-[#EEF2FF] flex items-center justify-center border border-[#4F46E5]/40">
-            <span className="text-xs font-bold text-[#4F46E5]">JD</span>
+          <div className="w-8 h-8 rounded-full bg-[#EEF2FF] flex items-center justify-center border border-[#663399]/40">
+            <span className="text-xs font-bold text-[#663399]">JD</span>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ const Header = () => {
 const JobCard = ({ job, isSelected, onClick }) => {
   return (
     <div
-      className={`p-4 rounded-xl ${isSelected ? "border-2 border-[#4F46E5] bg-[#EEF2FF]" : "border border-gray-200 hover:border-[#4F46E5]/50"} cursor-pointer transition-all`}
+      className={`p-4 rounded-xl ${isSelected ? "border-2 border-[#663399] bg-[#EEF2FF]" : "border border-gray-200 hover:border-[#663399]/50"} cursor-pointer transition-all`}
       onClick={onClick}
     >
       <div className="flex justify-between items-start mb-3">
@@ -104,7 +104,7 @@ const JobCard = ({ job, isSelected, onClick }) => {
       </p>
       <div className="flex items-center gap-2">
         <span
-          className={`px-2 py-0.5 ${isSelected ? "bg-[#4F46E5] text-white" : "bg-[#EEF2FF] text-[#4F46E5]"} text-[10px] font-bold rounded uppercase tracking-wider`}
+          className={`px-2 py-0.5 ${isSelected ? "bg-[#663399] text-white" : "bg-[#EEF2FF] text-[#663399]"} text-[10px] font-bold rounded uppercase tracking-wider`}
         >
           {job.type}
         </span>
@@ -219,14 +219,14 @@ const JobInsights = () => {
               <h1 className="text-xl font-bold text-gray-900">
                 Recommended for You
               </h1>
-              <button className="text-[#4F46E5] text-xs font-bold hover:underline">
+              <button className="text-[#663399] text-xs font-bold hover:underline">
                 Filter
               </button>
             </div>
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 size-5" />
               <input
-                className="w-full pl-10 pr-4 py-2 bg-[#FDFCFB] border-none rounded-lg text-sm focus:ring-2 focus:ring-[#4F46E5]/20 text-gray-900"
+                className="w-full pl-10 pr-4 py-2 bg-[#FDFCFB] border-none rounded-lg text-sm focus:ring-2 focus:ring-[#663399]/20 text-gray-900"
                 placeholder="Search roles or companies"
                 type="text"
               />
@@ -252,7 +252,7 @@ const JobInsights = () => {
             <div className="flex items-center justify-between mb-8">
               <div className="flex gap-3">
                 <button
-                  className="px-6 py-2.5 bg-[#4F46E5] text-white rounded-lg font-bold transition-all hover:bg-[#6366F1] active:scale-[0.98]"
+                  className="px-6 py-2.5 bg-[#663399] text-white rounded-lg font-bold transition-all hover:bg-[#6366F1] active:scale-[0.98]"
                   onClick={handleApplyNow}
                 >
                   Apply Now
@@ -283,15 +283,15 @@ const JobInsights = () => {
                 </h2>
                 <div className="flex flex-wrap items-center gap-y-2 gap-x-6 text-gray-600 font-medium">
                   <span className="flex items-center gap-1.5">
-                    <Building className="text-[#4F46E5] size-4" />
+                    <Building className="text-[#663399] size-4" />
                     {selectedJobData.company}
                   </span>
                   <span className="flex items-center gap-1.5">
-                    <MapPin className="text-[#4F46E5] size-4" />
+                    <MapPin className="text-[#663399] size-4" />
                     {selectedJobData.location}
                   </span>
                   <span className="flex items-center gap-1.5">
-                    <DollarSign className="text-[#4F46E5] size-4" />
+                    <DollarSign className="text-[#663399] size-4" />
                     {selectedJobData.salary}
                   </span>
                 </div>
@@ -299,7 +299,7 @@ const JobInsights = () => {
             </div>
 
             {/* Match Score Card */}
-            <div className="bg-[#EEF2FF] border border-[#4F46E5]/20 rounded-2xl p-6 mb-10">
+            <div className="bg-[#EEF2FF] border border-[#663399]/20 rounded-2xl p-6 mb-10">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-[#EA580C] flex items-center justify-center text-white font-bold text-lg">
                   {selectedJobData.matchScore}%
@@ -317,9 +317,9 @@ const JobInsights = () => {
                 {selectedJobData.matchReasons?.map((reason, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-2 text-sm text-[#4F46E5]"
+                    className="flex items-center gap-2 text-sm text-[#663399]"
                   >
-                    <CheckCircle className="text-[#4F46E5] size-5" />
+                    <CheckCircle className="text-[#663399] size-5" />
                     {reason}
                   </div>
                 ))}
@@ -347,7 +347,7 @@ const JobInsights = () => {
                   {selectedJobData.responsibilities?.map(
                     (responsibility, index) => (
                       <li key={index} className="flex items-start gap-3">
-                        <div className="size-1.5 rounded-full bg-[#4F46E5] mt-2 shrink-0"></div>
+                        <div className="size-1.5 rounded-full bg-[#663399] mt-2 shrink-0"></div>
                         {responsibility}
                       </li>
                     ),

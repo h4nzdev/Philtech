@@ -62,7 +62,7 @@ const Sidebar = () => {
   return (
     <aside className="w-64 border-r border-gray-200 bg-white fixed h-full z-50">
       <div className="p-6 flex items-center gap-3">
-        <div className="bg-[#4F46E5] p-1.5 rounded-lg">
+        <div className="bg-[#663399] p-1.5 rounded-lg">
           <svg
             className="size-6 text-white"
             fill="none"
@@ -85,8 +85,8 @@ const Sidebar = () => {
             key={index}
             className={`flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-lg transition-all ${
               isActive(item.link)
-                ? "text-[#4F46E5] bg-[#EEF2FF] font-bold"
-                : "text-gray-500 hover:bg-[#EEF2FF] hover:text-[#4F46E5]"
+                ? "text-[#663399] bg-[#EEF2FF] font-bold"
+                : "text-gray-500 hover:bg-[#EEF2FF] hover:text-[#663399]"
             }`}
             href={item.link}
           >

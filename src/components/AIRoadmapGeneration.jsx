@@ -8,7 +8,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full z-50">
       <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="bg-[#4F46E5] p-1.5 rounded-lg">
+          <div className="bg-[#663399] p-1.5 rounded-lg">
             <svg
               className="size-6 text-white"
               fill="none"
@@ -181,7 +181,7 @@ const AIRoadmapGeneration = () => {
               transition={{ duration: 1 }}
             />
             <motion.div
-              className="absolute inset-0 bg-gradient-radial from-[#4F46E5]/15 from-100% to-transparent to-50%"
+              className="absolute inset-0 bg-gradient-radial from-[#663399]/15 from-100% to-transparent to-50%"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
@@ -195,7 +195,7 @@ const AIRoadmapGeneration = () => {
             <motion.div className="relative mb-12 flex items-center justify-center">
               {/* Pulse ring 1 */}
               <motion.div
-                className="absolute w-64 h-64 bg-[#4F46E5]/10 rounded-full"
+                className="absolute w-64 h-64 bg-[#663399]/10 rounded-full"
                 variants={pulseRingVariants}
                 animate="pulse"
               />
@@ -217,7 +217,7 @@ const AIRoadmapGeneration = () => {
               >
                 {/* Spinning border */}
                 <motion.div
-                  className="absolute inset-0 rounded-full border-4 border-[#4F46E5]/20 border-t-[#4F46E5]"
+                  className="absolute inset-0 rounded-full border-4 border-[#663399]/20 border-t-[#663399]"
                   variants={spinVariants}
                   animate="spin"
                 />
@@ -262,7 +262,7 @@ const AIRoadmapGeneration = () => {
                   animate={{ rotate: 360 }}
                   transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                 >
-                  <Sparkles className="size-4 text-[#4F46E5]" />
+                  <Sparkles className="size-4 text-[#663399]" />
                 </motion.div>
                 <span className="text-xs font-bold text-gray-600 uppercase tracking-widest">
                   Processing Data Model
@@ -281,7 +281,7 @@ const AIRoadmapGeneration = () => {
                     Overall Progress
                   </span>
                   <motion.span
-                    className="text-sm font-bold text-[#4F46E5]"
+                    className="text-sm font-bold text-[#663399]"
                     key={percentageText}
                     initial={{ scale: 0.8 }}
                     animate={{ scale: 1 }}
@@ -293,7 +293,7 @@ const AIRoadmapGeneration = () => {
 
                 <div className="h-3 w-full bg-[#EEF2FF] rounded-full overflow-hidden">
                   <motion.div
-                    className="h-full bg-[#4F46E5] rounded-full shadow-[0_0_15px_rgba(79,70,229,0.5)]"
+                    className="h-full bg-[#663399] rounded-full shadow-[0_0_15px_rgba(79,70,229,0.5)]"
                     variants={progressBarVariants}
                     initial="initial"
                     animate="animate"

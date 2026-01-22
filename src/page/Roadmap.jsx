@@ -49,14 +49,14 @@ const SkillsProgress = ({ skills }) => {
           <div className="flex items-center justify-between text-[11px]">
             <span>{skill.name}</span>
             <span
-              className={`font-bold ${skill.match === "High Match" ? "text-[#4F46E5]" : "text-[#EA580C]"}`}
+              className={`font-bold ${skill.match === "High Match" ? "text-[#663399]" : "text-[#EA580C]"}`}
             >
               {skill.match}
             </span>
           </div>
           <div className="w-full bg-gray-200 h-1 rounded-full overflow-hidden">
             <div
-              className={`h-full ${skill.match === "High Match" ? "bg-[#4F46E5]" : "bg-[#EA580C]"}`}
+              className={`h-full ${skill.match === "High Match" ? "bg-[#663399]" : "bg-[#EA580C]"}`}
               style={{ width: `${skill.progress}%` }}
             ></div>
           </div>
@@ -95,7 +95,7 @@ const Roadmap = () => {
       description:
         "Mastering object-oriented programming in Python and window functions in SQL for complex data transformations.",
       icon: <Terminal className="size-6 text-white" />,
-      color: "#4F46E5",
+      color: "#663399",
     },
     {
       id: 2,
@@ -137,7 +137,7 @@ const Roadmap = () => {
       <main className="flex-1 ml-64">
         <div className="p-8 max-w-[1800px] mx-auto">
           <div className="mb-12">
-            <div className="flex items-center gap-2 text-[#4F46E5] font-bold text-xs uppercase tracking-widest mb-2">
+            <div className="flex items-center gap-2 text-[#663399] font-bold text-xs uppercase tracking-widest mb-2">
               <TrendingUp className="size-4" />
               Transition Path: Data Analyst → Data Engineer
             </div>
@@ -154,21 +154,21 @@ const Roadmap = () => {
           {/* Roadmap Timeline */}
           <div className="relative space-y-12">
             {/* Vertical Line */}
-            <div className="absolute left-[24px] top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#4F46E5] via-gray-200 to-gray-200 z-0"></div>
+            <div className="absolute left-[24px] top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#663399] via-gray-200 to-gray-200 z-0"></div>
 
             {/* Step 1 */}
             <RoadmapCard step={roadmapSteps[0]} index={0}>
-              <div className="bg-white border-2 border-[#4F46E5] rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
+              <div className="bg-white border-2 border-[#663399] rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#4F46E5] mb-1 block">
+                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#663399] mb-1 block">
                       Active Milestone
                     </span>
                     <h3 className="text-xl font-bold">
                       {roadmapSteps[0].title}
                     </h3>
                   </div>
-                  <span className="px-3 py-1 bg-[#EEF2FF] text-[#4F46E5] text-xs font-bold rounded-full border border-[#4F46E5]/20">
+                  <span className="px-3 py-1 bg-[#EEF2FF] text-[#663399] text-xs font-bold rounded-full border border-[#663399]/20">
                     42% Progress
                   </span>
                 </div>
@@ -188,7 +188,7 @@ const Roadmap = () => {
                     </h4>
                     <div className="flex items-center justify-center gap-4">
                       <div className="flex flex-col items-center">
-                        <div className="text-[#4F46E5] font-bold text-lg">
+                        <div className="text-[#663399] font-bold text-lg">
                           4y
                         </div>
                         <div className="text-[9px] uppercase text-gray-400">
@@ -245,7 +245,7 @@ const Roadmap = () => {
                         className="flex items-center gap-2 text-[11px]"
                       >
                         {skill.status === "complete" ? (
-                          <CheckCircle className="size-3.5 text-[#4F46E5]" />
+                          <CheckCircle className="size-3.5 text-[#663399]" />
                         ) : (
                           <Circle className="size-3.5 text-[#EA580C]" />
                         )}
@@ -308,9 +308,9 @@ const Roadmap = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="mt-16 bg-[#EEF2FF] rounded-2xl p-8 border border-[#4F46E5]/20 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="mt-16 bg-[#EEF2FF] rounded-2xl p-8 border border-[#663399]/20 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-[#4F46E5] rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#663399] rounded-full flex items-center justify-center">
                 <PieChart className="size-6 text-white" />
               </div>
               <div>
@@ -321,7 +321,7 @@ const Roadmap = () => {
                 </p>
               </div>
             </div>
-            <button className="w-full md:w-auto bg-[#4F46E5] text-white px-6 py-3 rounded-xl font-extrabold text-sm hover:bg-[#6366F1] transition-all shadow-lg shadow-[#4F46E5]/20 flex items-center justify-center gap-2">
+            <button className="w-full md:w-auto bg-[#663399] text-white px-6 py-3 rounded-xl font-extrabold text-sm hover:bg-[#6366F1] transition-all shadow-lg shadow-[#663399]/20 flex items-center justify-center gap-2">
               <File className="size-4" />
               Take Skills Assessment
             </button>

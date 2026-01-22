@@ -12,7 +12,7 @@ const Header = () => {
         </button>
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-full bg-[#EEF2FF] flex items-center justify-center">
-            <span className="text-xs font-bold text-[#4F46E5]">DA</span>
+            <span className="text-xs font-bold text-[#663399]">DA</span>
           </div>
           <span className="text-sm font-medium">Alex Chen</span>
         </div>

@@ -24,7 +24,7 @@ const TaskItem = ({ title, category, completed }) => {
     <label className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 cursor-pointer transition-colors group">
       <div className="mt-1">
         <div
-          className={`w-4 h-4 rounded border ${completed ? "bg-[#4F46E5] border-[#4F46E5]" : "border-gray-300"} flex items-center justify-center`}
+          className={`w-4 h-4 rounded border ${completed ? "bg-[#663399] border-[#663399]" : "border-gray-300"} flex items-center justify-center`}
         >
           {completed && <Check className="size-3 text-white" />}
         </div>
@@ -78,11 +78,11 @@ const CourseProgress = ({ title, progress }) => {
     <div className="p-4 rounded-xl bg-gray-50">
       <div className="flex justify-between mb-2">
         <span className="text-xs font-bold text-gray-900">{title}</span>
-        <span className="text-xs text-[#4F46E5] font-bold">{progress}%</span>
+        <span className="text-xs text-[#663399] font-bold">{progress}%</span>
       </div>
       <div className="h-1.5 w-full bg-gray-200 rounded-full overflow-hidden">
         <div
-          className="h-full bg-[#4F46E5]"
+          className="h-full bg-[#663399]"
           style={{ width: `${progress}%` }}
         ></div>
       </div>
@@ -187,14 +187,14 @@ const Dashboard = () => {
       icon: UserPlus,
       title: "Mentor Request accepted",
       description: "Sarah J. is now your mentor",
-      colorClass: "bg-[#EEF2FF] text-[#4F46E5]",
+      colorClass: "bg-[#EEF2FF] text-[#663399]",
     },
   ];
 
   const quickActions = [
-    { icon: Edit3, label: "Update Profile", hoverColor: "[#4F46E5]" },
+    { icon: Edit3, label: "Update Profile", hoverColor: "[#663399]" },
     { icon: Calendar, label: "Book a Mentor", hoverColor: "[#EA580C]" },
-    { icon: HelpCircle, label: "Take a Skill Quiz", hoverColor: "[#4F46E5]" },
+    { icon: HelpCircle, label: "Take a Skill Quiz", hoverColor: "[#663399]" },
   ];
 
   return (
@@ -215,13 +215,13 @@ const Dashboard = () => {
               <span className="text-sm font-bold text-gray-900">
                 Career Transition Progress
               </span>
-              <span className="text-sm font-bold text-[#4F46E5]">
+              <span className="text-sm font-bold text-[#663399]">
                 65% complete
               </span>
             </div>
             <div className="h-3 bg-gray-100 rounded-full overflow-hidden">
               <div
-                className="h-full bg-[#4F46E5]"
+                className="h-full bg-[#663399]"
                 style={{ width: "65%" }}
               ></div>
             </div>
@@ -238,7 +238,7 @@ const Dashboard = () => {
         <div className="space-y-6">
           <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold flex items-center gap-2 mb-6 text-gray-900">
-              <ListTodo className="text-[#4F46E5] text-xl" />
+              <ListTodo className="text-[#663399] text-xl" />
               Weekly Focus
             </h3>
             <div className="space-y-4">
@@ -246,7 +246,7 @@ const Dashboard = () => {
                 <TaskItem key={index} {...task} />
               ))}
             </div>
-            <button className="w-full mt-6 py-2 text-xs font-bold text-[#4F46E5] hover:underline">
+            <button className="w-full mt-6 py-2 text-xs font-bold text-[#663399] hover:underline">
               + Add Task
             </button>
           </div>
@@ -256,7 +256,7 @@ const Dashboard = () => {
         <div className="space-y-6">
           <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold flex items-center gap-2 mb-6 text-gray-900">
-              <TrendingUp className="text-[#4F46E5] text-xl" />
+              <TrendingUp className="text-[#663399] text-xl" />
               Skills Growth
             </h3>
             <SkillChart />
@@ -300,7 +300,7 @@ const Dashboard = () => {
 
           <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold flex items-center gap-2 mb-4 text-gray-900">
-              <Users className="text-[#4F46E5] text-xl" />
+              <Users className="text-[#663399] text-xl" />
               Networking Activity
             </h3>
             <div className="space-y-3">
@@ -324,14 +324,14 @@ const Dashboard = () => {
               className={`flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-xl text-sm font-bold transition-all group shadow-sm ${
                 index === 1
                   ? "hover:border-[#EA580C] hover:text-[#EA580C]"
-                  : "hover:border-[#4F46E5] hover:text-[#4F46E5]"
+                  : "hover:border-[#663399] hover:text-[#663399]"
               }`}
             >
               <action.icon
                 className={`size-5 text-gray-400 transition-colors ${
                   index === 1
                     ? "group-hover:text-[#EA580C]"
-                    : "group-hover:text-[#4F46E5]"
+                    : "group-hover:text-[#663399]"
                 }`}
               />
               {action.label}
