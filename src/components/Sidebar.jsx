@@ -10,6 +10,7 @@ import {
   Upload,
   Briefcase,
 } from "lucide-react";
+import logo from "../assets/logo.png";
 
 const Sidebar = () => {
   const location = useLocation();
@@ -63,20 +64,10 @@ const Sidebar = () => {
     <aside className="w-64 border-r border-gray-200 bg-white fixed h-full z-50">
       <div className="p-6 flex items-center gap-3">
         <div className="bg-[#663399] p-1.5 rounded-lg">
-          <svg
-            className="size-6 text-white"
-            fill="none"
-            viewBox="0 0 48 48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"
-              fill="currentColor"
-            />
-          </svg>
+          <img src={logo} alt="Logo" className="w-8 h-8" />
         </div>
         <h2 className="text-xl font-bold tracking-tight text-gray-900">
-          CareerDev
+          Dovetail
         </h2>
       </div>
       <nav className="mt-6 px-4 space-y-2">

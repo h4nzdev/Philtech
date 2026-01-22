@@ -198,7 +198,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="p-8 max-w-[1800px] mx-auto space-y-8 mr-64">
+    <div className="p-8 max-w-[1800px] mx-auto space-y-8 ml-64">
       {/* Welcome & Progress Section */}
       <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">

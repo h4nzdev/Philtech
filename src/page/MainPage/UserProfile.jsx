@@ -118,7 +118,7 @@ const UserProfile = () => {
   };
 
   return (
-    <div className="p-8 max-w-[1800px] mx-auto mr-64">
+    <div className="p-8 max-w-[1800px] mx-auto ml-64">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Left Column - Profile Info */}
         <div className="lg:col-span-1 space-y-6">

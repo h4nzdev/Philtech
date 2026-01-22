@@ -13,11 +13,16 @@ import {
   ListChecks,
   GitBranch,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 // Roadmap Card Component
 const RoadmapCard = ({ step, index, children }) => {
+  const navigate = useNavigate();
   return (
-    <div className="relative flex gap-8 group">
+    <div
+      className="relative flex gap-8 group cursor-pointer"
+      onClick={() => navigate("/course-detail")}
+    >
       <div className="z-10 mt-1">
         <div
           className={`w-12 h-12 rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(79,70,229,0.4)] ${

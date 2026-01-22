@@ -135,7 +135,7 @@ const AIRoadmapGeneration = () => {
     <AnimatePresence>
       {show && (
         <motion.div
-          className="min-h-screen bg-white font-sans text-gray-900 overflow-hidden"
+          className="min-h-screen bg-white font-sans text-gray-900 overflow-hidden ml-64"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -238,7 +238,7 @@ const AIRoadmapGeneration = () => {
             </motion.div>
 
             {/* Progress section */}
-            <div className="fixed bottom-0 left-0 w-full p-12 bg-gradient-to-t from-white via-white/80 to-transparent">
+            <div className="fixed bottom-0 left-0 w-full p-12 bg-gradient-to-t from-white via-white/80 to-transparent ml-32">
               <div className="max-w-[800px] mx-auto">
                 <motion.div
                   className="flex justify-between items-center mb-4"
@@ -295,7 +295,7 @@ const AIRoadmapGeneration = () => {
 
           {/* Footer */}
           <motion.footer
-            className="fixed bottom-4 left-0 w-full text-center"
+            className="fixed bottom-4 left-0 w-full text-center "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}

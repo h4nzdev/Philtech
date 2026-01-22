@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import ProfileCreationMethod from "../page/ProfileCreationMethod";
-import CareerDevSignup from "../page/CareerDevSignup";
-import GoalsSkillsOnboarding from "../page/GoalsSkillsOnboarding";
-import Roadmap from "../page/Roadmap";
-import CareerTransitionHub from "../page/CareerTransitionHub";
+import DovetailSignup from "../page/CareerDev/DovetailSignup";
+import Roadmap from "../page/MainPage/Results/Roadmap";
+import CareerTransitionHub from "../page/MainPage/CareerTransitionHub";
 import UploadResume from "../page/UploadResume";
-import JobInsights from "../page/JobInsights";
+import JobInsights from "../page/MainPage/Results/JobInsights";
 import MainLayout from "../layout/MainLayout";
-import Dashboard from "../page/Dashboard";
-import UserProfile from "../page/UserProfile";
-import CareerEvolutionTree from "../page/CareerEvolutionTree";
+import Dashboard from "../page/MainPage/Dashboard";
+import UserProfile from "../page/MainPage/UserProfile";
+import CareerEvolutionTree from "../page/MainPage/Results/CareerEvolutionTree";
+import CourseDetailView from "../page/MainPage/CourseDetailView";
 
 const MainRoutes = () => {
   return (
@@ -36,12 +36,8 @@ const MainRoutes = () => {
             </MainLayout>
           }
         />
-        <Route path="/sign-up" element={<CareerDevSignup />} />
+        <Route path="/sign-up" element={<DovetailSignup />} />
         <Route path="/upload-resume" element={<UploadResume />} />
-        <Route
-          path="/goal-skills-onboarding"
-          element={<GoalsSkillsOnboarding />}
-        />
         <Route
           path="/career-hub"
           element={
@@ -55,6 +51,14 @@ const MainRoutes = () => {
           element={
             <MainLayout>
               <Roadmap />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/course-detail"
+          element={
+            <MainLayout>
+              <CourseDetailView />
             </MainLayout>
           }
         />
