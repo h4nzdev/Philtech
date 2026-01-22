@@ -247,7 +247,7 @@ const JobInsights = () => {
 
         {/* Right Panel - Job Details */}
         <section className="flex-1 overflow-y-auto bg-white">
-          <div className="max-w-4xl mx-auto px-8 py-10">
+          <div className="max-w-[1800px] mx-auto px-8 py-10">
             {/* Action Buttons */}
             <div className="flex items-center justify-between mb-8">
               <div className="flex gap-3">

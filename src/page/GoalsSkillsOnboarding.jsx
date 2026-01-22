@@ -169,7 +169,7 @@ const GoalsSkillsOnboarding = () => {
   };
 
   const handleCreateAccount = () => {
-    navigate("/roadmap");
+    navigate("/career-tree");
     console.log("Creating account with:", {
       selectedGoal,
       skills,

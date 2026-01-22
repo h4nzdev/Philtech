@@ -9,6 +9,8 @@ import UploadResume from "../page/UploadResume";
 import JobInsights from "../page/JobInsights";
 import MainLayout from "../layout/MainLayout";
 import Dashboard from "../page/Dashboard";
+import UserProfile from "../page/UserProfile";
+import CareerEvolutionTree from "../page/CareerEvolutionTree";
 
 const MainRoutes = () => {
   return (
@@ -23,6 +25,14 @@ const MainRoutes = () => {
           element={
             <MainLayout>
               <Dashboard />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/user-profile"
+          element={
+            <MainLayout>
+              <UserProfile />
             </MainLayout>
           }
         />
@@ -45,6 +55,14 @@ const MainRoutes = () => {
           element={
             <MainLayout>
               <Roadmap />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/career-tree"
+          element={
+            <MainLayout>
+              <CareerEvolutionTree />
             </MainLayout>
           }
         />

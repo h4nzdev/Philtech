@@ -49,7 +49,7 @@ const Sidebar = () => {
     {
       icon: <User className="size-5" />,
       label: "Profile",
-      link: "/profile",
+      link: "/user-profile",
     },
   ];
 

@@ -12,9 +12,6 @@ import {
   File,
   ListChecks,
 } from "lucide-react";
-import AIRoadmapGeneration from "../components/AIRoadmapGeneration"; // Import the splash screen component
-import Header from "../components/Header";
-import Sidebar from "../components/Sidebar";
 
 // Roadmap Card Component
 const RoadmapCard = ({ step, index, children }) => {
@@ -68,23 +65,6 @@ const SkillsProgress = ({ skills }) => {
 
 // Main Component
 const Roadmap = () => {
-  const [showSplash, setShowSplash] = useState(true);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Show splash screen for 3 seconds, then show content
-    const timer = setTimeout(() => {
-      setShowSplash(false);
-      setIsLoading(false);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (showSplash) {
-    return <AIRoadmapGeneration />;
-  }
-
   const roadmapSteps = [
     {
       id: 1,
