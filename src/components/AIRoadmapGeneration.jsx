@@ -2,37 +2,6 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, TrendingUp, Flag, Brain, Briefcase } from "lucide-react";
 
-// Header Component
-const Header = () => {
-  return (
-    <header className="fixed top-0 left-0 w-full z-50">
-      <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="bg-[#663399] p-1.5 rounded-lg">
-            <svg
-              className="size-6 text-white"
-              fill="none"
-              viewBox="0 0 48 48"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"
-                fill="currentColor"
-              />
-            </svg>
-          </div>
-          <h2 className="text-xl font-bold tracking-tight text-gray-900">
-            CareerDev
-          </h2>
-        </div>
-        <div className="text-sm font-medium text-gray-400">
-          Onboarding Personalization
-        </div>
-      </div>
-    </header>
-  );
-};
-
 // Main Component
 const AIRoadmapGeneration = () => {
   const [progress, setProgress] = useState(0);
@@ -187,8 +156,6 @@ const AIRoadmapGeneration = () => {
               transition={{ duration: 1, delay: 0.2 }}
             />
           </div>
-
-          <Header />
 
           <main className="relative h-screen w-full flex flex-col items-center justify-center px-6">
             {/* Animated circles and center element */}

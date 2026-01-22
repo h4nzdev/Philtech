@@ -11,6 +11,7 @@ import {
   PieChart,
   File,
   ListChecks,
+  GitBranch,
 } from "lucide-react";
 
 // Roadmap Card Component
@@ -111,8 +112,28 @@ const Roadmap = () => {
     { name: "Report Optimization", status: "complete" },
   ];
 
+  // Function to navigate back to career tree
+  const handleBackToTree = () => {
+    // You can use navigate hook here if you have routing set up
+    // For now, we'll just log and reload the page
+    console.log("Navigating back to career tree");
+    window.location.href = "/career-tree"; // Update with your actual route
+  };
+
   return (
     <div className="min-h-screen bg-[#FDFCFB] font-sans text-gray-900 flex">
+      {/* Floating Career Tree Icon */}
+      <button
+        onClick={handleBackToTree}
+        className="fixed top-20 right-6 z-50 w-14 h-14 bg-white rounded-full shadow-2xl border-2 border-[#663399] flex items-center justify-center hover:scale-110 hover:shadow-3xl transition-all duration-200 group"
+        title="Back to Career Tree"
+      >
+        <div className="relative">
+          <GitBranch className="size-7 text-[#663399]" />
+          <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#EA580C] rounded-full border-2 border-white"></div>
+        </div>
+      </button>
+
       {/* Main Content */}
       <main className="flex-1 ml-64">
         <div className="p-8 max-w-[1800px] mx-auto">
